@@ -1,0 +1,691 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    Box-sizing: border-box;
+  background: color #000;
+  
+
+    }
+    
+    
+    html{
+        display: flex;
+    }
+  
+  
+    .section_0{
+        height: calc(100vh - 10vh);
+        width: 100%;
+        
+      }
+  .section_1{
+    height: calc(100vh - 5vh) ;
+    width: 100%;
+    
+  }
+  .section_2{
+     width: 100%;
+    height: calc(100vh )  ;
+    
+  }  
+  .section_3{
+   width: 100%;
+    height: calc(195vh)  ;
+   
+  }
+ 
+  
+
+.centralizar_menu{
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    top: 0;
+  background: white;
+  box-shadow: 5px 5px 15px #000;
+
+    z-index: 1;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-items: center;
+    left: 0;
+    opacity: 1;
+  
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    display: flex;
+   justify-content: center;
+    width: 80%;
+    z-index: 0;
+    font-family: "Poppins", serif;
+    align-items: center;
+    height: 7em;
+     visibility: visible;
+}
+.traco{
+    position: absolute;
+    background-color: #000;
+    width: 2px;
+    height: 2em;
+    top: 3px;
+    right: 3.45em;
+    
+}
+.sociais{
+    position: absolute;
+   right: 2%;
+   margin: 10px;
+   font-size: 1em;
+   align-content: space-around;
+  
+}
+.sociais i {
+    overflow: hidden!important;
+}
+.sociais button{
+    background-color: #ffffff;
+    font-size: 2em;
+    border-radius: 5px;
+    color: #000000;
+    margin: 0em 0.2em;
+    border: none;
+    text-decoration: none;
+   
+}
+.sociais a{
+    text-decoration: none;
+    color: #000; 
+  
+}
+.sociais i:hover{
+   color: #444444;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+
+}
+
+.zap_icone_menu{
+    position: fixed;
+    background-size: 1em;
+    right: 0;
+    top: 0;
+    z-index:100!important;
+}
+.menu a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1em;
+    transition:all 0.5s ease;
+    opacity: 1 !important;
+    margin: 0em 3em;
+    position: relative;
+    left: 7em;
+      font-weight: 400;
+}
+.menu a::after{
+    background-color: #000000;
+    content: " ";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    background-position: -100%;
+    left: 0em;
+    transition: all 0.5s ease-in-out;
+
+}
+.menu a:hover::after{
+    background-color: #D4AF37;
+    width: 5em;
+
+}
+.menu a:hover{
+    opacity: 0.7;  
+    color: #000000;
+    opacity: 1;
+}
+.zap_icon{
+    width: 3.5em;
+    height: 3.5em;
+    display:flex;
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+    z-index: 3;
+}
+.zap_icon{
+    cursor: pointer;
+    
+}
+h1{ 
+    color: #756a44;
+}
+.fundo_menu{
+    display: flex;
+    position: fixed;
+    background-size: cover;
+    left: 3em;
+    background-image: url(/IMAGEM/logooriginal.png);
+    height: 15%;
+    width: 25%;
+    background-position: center;
+    top: 2.5%;
+    z-index: 1;
+ top: 0;
+background-size: 19em;
+background-repeat: no-repeat;
+
+}
+
+
+
+.texto_fundo_menu h4{
+    position:absolute;
+    font-size:4.5rem;
+    color: #ffffff;
+    font-family: 'Ubunto', sans-serif;
+    text-align: start;
+   top : 0;
+    width: 8em;
+    height: 50%;
+    left: 1em;
+}
+.texto_fundo_menu span{
+    color: #c8a345;
+}
+
+.texto_fundo_menu{
+    position: absolute;
+    z-index: 0;
+    display: flex ;
+    width: 50%;
+    top: 6em;
+    height: 100%;
+    left: 3em;
+
+}
+.texto_fundo_menu p{
+    position: absolute;
+    top:12em;
+    font-size: 1.5rem;
+    font-family:  'Ubunto', sans-serif;
+    color: #fff;
+    text-align: start;
+    overflow: hidden!important;
+    width: 20em;
+    left: 3em;
+    justify-content: center;
+
+}
+
+.imagem_fundo{
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(/IMAGEM/stfbranco.jpg);
+ background-color: #444444;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  display: flex;
+  position: fixed;   
+ background-position: center;
+left: 0;
+background-size: cover;
+transform: scaleX(-1);
+}
+
+.texto_fundo_menu{
+    height: 75%;
+}
+
+.texto_fundo_menu button{
+    position: absolute;
+    display: flex;
+   width: 18em;
+   height: 3em;
+   font-family:"Poppins", serif;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   bottom: 0;
+   left: 4.8em;
+background-color: #ffffff00;
+}
+
+.texto_fundo_menu a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    background-color: #b4984f;
+    transition: all 0.2s ease;
+}
+
+.texto_fundo_menu a:hover{
+    border-style:visible;
+    transform: translateY(0.5em);
+
+}
+
+body{
+    background-color: #ffffff;
+
+}
+.img_fundo_atuacao{
+    background-image: url(/IMAGEM/fundoareatuação.jpg);
+    background-position-x: 150% ;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    top: 196.5%;
+    color: #92876a;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    height: 110%;
+    background-size: cover;       
+    z-index: 0;        
+    overflow: hidden!important;                                                                              
+}
+.area_de_atuacao{
+   z-index: 10;
+    background-color: #ffffff5b;
+    top: 200%;
+    width: 100%;
+    left: 0;
+    height: 120%;
+    background-size: cover;    
+    justify-items: center;     
+    align-items: center;      
+    overflow: hidden!important;                                                                              
+}
+.org_area_de_atuacao{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+     top: 16%;
+     justify-content: space-around;
+     overflow: hidden!important;
+    }
+
+.org_area_de_atuacao div{
+    display:flex;
+    position: relative;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+}
+
+.org_area_de_atuacao img{
+ top: -5%;
+ background-size: cover;
+ width: 20em;
+ height: 13.5em;
+}
+
+.org_area_de_atuacao p{
+    position: absolute;
+  top: 12.5em;
+ background-size: cover;
+color: #000;
+  width:20em;
+  font-size: 1em;
+  font-family: "Poppins", serif;
+   left: 7em;
+   line-height: 1.2em;
+   font-weight: 400;
+   height: 100%;
+   text-align: justify;
+   overflow: hidden!important;
+
+   
+   }
+
+
+.titulo_atuacao{
+    font-size: 4em;
+    position: absolute;
+   width: 100%;
+   text-align: center;
+    color: #333;
+    font-family: "Bebas Neue", serif;
+    opacity: 1 !important;
+    top: -0.45em;
+
+
+    
+}
+.titulo_atuacao::after{
+    background-color: #dfdacc;
+    content: " ";
+    width: 30%;
+    height: 0.05em;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    left: 35%;
+    
+}
+.botao_atuacao {
+    position: absolute;
+    background: #04691a;
+    height: 3.5em;
+    width: 11em;
+    font-family: "Poppins", serif;
+    text-align: center;
+    font-size: 1em;
+    top: 100%;
+    left: 44%;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    justify-content:center ;
+    transform: translateY(4em);
+    
+}
+.botao_atuacao:hover {
+    border-style:visible;
+    transform: translateY(4.5em);
+    box-shadow: 0 0 0.5em #04691a;
+    border: 2px solid #04691a;
+}
+.botao_atuacao a{
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+   z-index:5;
+   width:100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   text-align: center;
+   align-content: center;
+
+}
+h6 i{
+    
+    border-radius: 100%;
+    background-color: #92876a;
+   padding: 19px 15px;
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+   text-align: center;
+   font-size:1em;
+   color: white;
+   margin-right: 0.8em;
+   
+}
+
+h2{
+    color:#92876a;
+    top: 1px;
+
+}
+img{
+    margin-top: 15px;
+    height: 30%;
+  position:relative;
+ bottom: 1%;
+
+}
+.titulo_servicos{
+    font-size: 4em;
+    position: absolute;
+   width: 100%;
+   text-align: center;
+    color: #756a44;
+    font-family: "Bebas Neue", serif;
+    opacity: 1 !important;
+    top: -0.45em;
+}
+.titulo_servicos::after{
+    background-color: #555;
+    content: " ";
+    width: 30%;
+    height: 0.05em;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 35%;
+}
+.servicos{
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    top: 300%;
+    color: #333;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    height: 191%;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow:7px -7px 10px #000 ;        
+    
+}
+.servicos_prestados{
+    
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden!important;
+}
+.servicos_prestados div{
+  
+    height: 20em;
+    width: 80%;
+    right: 20%;
+    border-bottom: #756a44 solid 5px;
+    padding: 10px;
+
+}
+.servicos_prev{
+    border:none !important;
+}
+
+.titulo_serv_cond{
+    font-size: 6em;
+    position: absolute;
+    left: 11%;
+    color: #333;
+    font-family: "Bebas Neue", serif;
+    top: 0.55em;
+}
+
+.explica_serv_cond{
+    right: 10%;
+    position: absolute;
+    color: #333;
+    width: 40%;
+    text-align: start;
+    Line-height: 2;
+     
+}
+
+.titulo_serv_civil{
+    font-size: 6em;
+    position: absolute;
+    left: 11%;
+    color: #756a44;
+    font-family: "Bebas Neue", serif;
+    top:3.9em;
+}
+
+.explica_serv_civil{
+    right: 10%;
+    position: absolute;
+    color: #333;
+    width: 40%;
+    text-align: start;
+    Line-height: 2;
+    
+}
+.sobre{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    background: #ffffff;
+    color: #333;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    font-family: "Poppins", serif;
+    height: 120%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+   box-shadow: #000 7px -7px 10px;
+   
+    
+}
+
+.frase_sobre{
+    position: absolute;
+    top: 5%;
+    align-items: end;
+    opacity: 1 !important;
+    
+
+
+}
+.conteudo_sobre{
+    position: absolute;
+    width: 60%;
+    font-family: "Poppins", serif;
+    font-size: large;
+    text-align: center;
+    margin-top: 5em;
+    color: #000000;
+    opacity: 1 !important;
+   
+}
+
+
+
+
+.contato{
+    display: flex;
+    position: absolute;
+    top:calc(500% - 10vh) ;
+    background: #000000;
+    color: #000;
+    width: 100%;
+    left: 0%;
+    z-index: -1;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    height: 90%;
+}
+
+iframe{
+    position: absolute;
+    box-shadow:0 0 0.6em #444444;
+    left: 1%;
+    width: 50%;
+    border-radius: 1em;
+    height: 80%;
+    top: 13%;
+
+}
+.info_contato{
+    color: #92876a;
+    position: absolute;
+    right:5%;
+    justify-content: center;
+     line-height: 3;
+    width: 40%;
+    align-items: center;
+    top: 28%;
+    overflow: hidden!important;
+
+height: 65%;
+}
+.titulo_contato{
+    color: #fff;
+    position: absolute;
+    right: 7%;
+    font-size: 2.5em;
+    top:1em;
+}
+.botao_fale_conosco{
+    position: absolute;
+    width: 11em;
+    height: 2.5em;
+    display: flex;
+    right: 45%;
+    top:75%;
+}
+.botao_fale_conosco  button{
+border-radius: 10px;
+height: 110%;
+width: 110%;
+position: absolute;
+border: none;
+background-color: #D4AF37;
+text-decoration: none;
+cursor: pointer;
+font-size: 1em;
+font-family: "Poppins", serif;
+transition: all 0.3s ease;
+
+}
+.botao_fale_conosco button:hover{
+    border-style:visible;
+    transform: translateY(0.1em);
+    box-shadow: 0 0 0.25em #D4AF37;
+    border: 2px solid #D4AF37;
+    opacity: 0.9;
+}
+h3{
+    
+    position: absolute;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 1em;
+    top: 201%;
+    font-family: "Poppins", serif;
+    width: 70%;
+    text-align: center;
+    
+}
+
+
+.linha{
+    position: absolute;
+    background-color: #92876a;
+    width: 35em;
+    height: 0.5em;
+    top: 29%;
+}
+
+
+
