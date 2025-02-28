@@ -178,7 +178,7 @@ body{
 
   }
   .sobre{
-      height: 200%;
+      height: 300%;
   }
   .frase_sobre{
       font-size: 1.5em;
@@ -195,13 +195,13 @@ body{
   
   .conteudo_sobre{
       font-size: 1.2em;
-      top: 4em;
+      top: 5em;
       width: 85%;
      text-align: justify;
       line-height: 1.5em;
   }
   .area_de_atuacao{
-      height: 300%;
+      height: 200%;
       top: calc(300% - 5vh);
      
   }
@@ -216,20 +216,18 @@ body{
       position:absolute;
       width: 100%;
       background-position: center;
-      height: 270%;
-      top: calc(305% - 5vh);
+      height: 205%;
+      top: calc(335% - 5vh);
   }
   .org_area_de_atuacao {
      display: block;
      top:7em;
       justify-items: center;
-     height: 200%;
-    
+     height: 80%;
   }
   .org_area_de_atuacao img{
       justify-content: center;
       align-items: center;
-     
       height: 15em;
       background-size: cover;
   }
@@ -255,16 +253,16 @@ body{
       line-height: 1em;
       height: 10em;
          }
-  .botao_atuacao{
-     top: 82em;
+   .botao_atuacao{
+    top:83%;
      position: absolute;
      left: 0;
      right: 0;
      margin: auto;
   }
   .servicos{
-      top:calc(570% - 5vh);
-      height: 400%;
+      top:calc(535.5% - 5vh);
+      height: 275%;
      
   }
   .servicos_prestados div{
@@ -277,9 +275,9 @@ body{
   height: 100%;
   flex-direction: line;
   justify-content: center;
-  display: grid;
+  display: block;
   width: 100%;
-  justify-items: center;
+  align-content: space-around;
   top: 0;
   
   }
@@ -292,7 +290,7 @@ body{
     font-size: 3em;
    text-align: center;
     left: 0;
-       width: 100%;
+    width: 100%;
       
   }
   .explica_serv_cond{
@@ -301,7 +299,6 @@ body{
       font-weight: 600;
       line-height: 1.5em;
       width: 85%;
-      justify-items: center;
       text-align: justify;
       right: 0;
       left: 0;
@@ -309,56 +306,38 @@ body{
      
   }
   .titulo_serv_civil{
+    position:relative;
       font-size: 3em;
-      top: 9.5em;
       width: 15%;
       right: 0;
       left: 0;
-      margin: auto;
-      padding: none;
+      width: 1.5em;
+      top: 0.4em;
+      margin-bottom:1em;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
   }
   .explica_serv_civil{
-      top: 28em;
-      font-size:1.2em;
+   
+    font-size:1.2em;
       font-weight: 600;
       line-height: 1.5em;
-      width: 90%;
+      width: 85%;
       justify-items: center;
       text-align: justify;
       right: 0;
       left: 0;
       margin: auto;
-  }
-  .titulo_serv_prev{
-      font-size: 3em;
-      top: 19.5em;
-      right: 0;
-      left: 0;
-      margin: auto;
-      padding: none;
-      width: 100%;
-      text-align: center;
-      
-  }
-  .explica_serv_prev{
-      top: 54.5em;
-      font-size:1.2em;
-      font-weight: 600;
-      line-height: 1.5em;
-      width: 90%;
-      justify-items: center;
-      text-align: justify;
-      right: 0;
-      left: 0;
-      margin: auto;
-  }
-  .contato{
-      top:calc(600% - 5vh); 
-      height: 100%;
 
   }
+  .contato{
+      top:calc(810% - 5vh); 
+      height: 120%;
+     z-index: 3;
+  }
   .titulo_contato{
-      top: 8em;
+      top: 1em;
       font-size: 1.5em;
       right:0;
       left: 0;
@@ -367,31 +346,48 @@ body{
       text-align: center;
 
   } .info_contato{
-      top: 17em;
+      top: 4em;
       font-size: 0.9em;
-      width:80%;
+      width:100%;
       right:0;
       left: 0;
       margin: auto;
       text-align: justify;
+      left: 0;
+      right: 0;
+      margin: auto;
+      justify-content: center;
+      height: 20em;
 
   }
   .botao_fale_conosco{
-      top: 17em;
-      right: 0;
+  width: 100%;
+      bottom:0;
       left: 0;
-      margin: auto;
-      width: 50%;
+      right: 0;
+      width:100%;
       text-align: center;
-
+      margin-left: auto;
+      margin-right: auto;
   }
+
+  .botao_fale_conosco a button{
+width: 65%;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+}
+
   iframe{
-      width: 90%;
-     top: 57%;
+      width: 100%;
+     top: 22em;
       height: 40%;
      left: 0;
      right: 0;
-     margin: auto;
+     margin-left: auto;
+     margin-right: auto;
+
   }
    
 }
