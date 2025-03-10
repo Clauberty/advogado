@@ -34,35 +34,40 @@ link.addEventListener('click', scrollSection)
 /* menu hamburguer */
 
 function barramenu(){
-    var primeiraLinha = document.getElementsByClassName('hamburguer')[0];
-    var ultimaLinha = document.getElementsByClassName('hamburguer')[1];
-    
-    primeiraLinha.style.transform = "rotate(135deg)";
-    ultimaLinha.style.transform = "rotate(-135deg)";
-   
 
+    var menuHamburguer = document.querySelector('.centralizar_menu');
     var menu =  document.querySelector('.menu');
-    menu.style.visibility = 'visible';
-     menu.style.height = "300px";
-     var menuHamburguer = document.querySelector('.centralizar_menu');
-     var x = document.createElement('div');
-   menuHamburguer.appendChild(x);
-   x.classList.add='fechar';
-   x.style.position = 'absolute';
-   x.style.width = '30px';
-   x.style.height = '30px';
-   x.style.background = '#000';
-   x.style.left = '1.6em';
-   x.style.top = '2em';
-x.style.cursor = 'pointer';
-
-x.style.opacity = '0';
- 
-x.addEventListener('click', function() {
+    menu.style.display = 'flex';
+    setTimeout(() => {
+        menu.style.visibility = 'visible';
+    }, 0001);
+    setTimeout(() => {
+        menu.style.height="160%";
+    }, 0001);
+    
+    
+    var x = document.createElement('div');
+    menuHamburguer.appendChild(x);
+    x.classList.add='fechar';
+    x.style.position = 'absolute';
+    x.style.width = '50px';
+    x.style.height = '50px';
+    x.style.background = '#000';
+    x.style.left = '1em';
+    x.style.top = '2em';
+    x.style.cursor = 'pointer';
+    x.style.opacity = '1';
    
-   menu.style.visibility = 'hidden';   
-  x.style.display ='none';
-   menu.style.height = "0"
+
+x.addEventListener('click', function() {
+    menu.style.height="0";
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 100);
+    
+    menu.style.transform = 'translateY(0)';
+   x.style.display = 'none';
+
 });
 
-};
+}

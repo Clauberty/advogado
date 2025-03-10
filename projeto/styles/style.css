@@ -127,7 +127,7 @@
     margin: 0em 3em;
     position: relative;
     left: 7em;
-      font-weight: 400;
+    font-weight: 400;
 }
 .menu a::after{
     background-color: #000000;
@@ -507,7 +507,7 @@ img{
     padding: 10px;
 
 }
-.servicos_prev{
+.servicos_civil{
     border:none !important;
 }
 
