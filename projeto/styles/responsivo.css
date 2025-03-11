@@ -1561,7 +1561,15 @@ iframe{
 }
 }
 @media only screen and (min-width:1140px) and (max-width:1200px) and (min-height:1070px) and (max-height:1100px){
-.menu{
+html{
+  background-color: aqua;
+  height: 100%;
+}
+  
+body{
+  background-color: aqua;
+}
+  .menu{
   position: relative;
   height: 100%;
   width: 60%;
@@ -1684,7 +1692,7 @@ justify-content: center;
 .contato{
   top: 350%;
   z-index: 1;
-  height: 90%;
+  height: 75%;
 }
 
 .titulo_contato{
@@ -1712,7 +1720,69 @@ justify-content: center;
  }
  iframe{
    width: 50%;
-   height: 50%;
-   top: 10em;
+   height: 55%;
+   top: 12em;
  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1290px) and (min-height:700px) and (max-height:800px){
+.hamburguer{
+  display: none;
+}
+.texto_fundo_menu .botao_chamada{
+  height: 4.5em;
+  width: 25em;
+}
+.img_fundo_atuacao{
+  background-size: 100%;
+  height: 100%;
+}
+
+.area_de_atuacao p{
+left: 6em;
+font-weight: 600;
+}
+
+.area_de_atuacao .botao_atuacao{
+  top: 70%;
+}
+.servicos{
+  top: 290%;
+}
+.contato{
+  top: 400%;
+  z-index: 0;
+}
+
+.contato h1{
+text-align: center;
+ width: 100%;
+ top:0;
+ margin-top:0;
+ right: 0;
+}
+
+.contato p{
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 0%;
+}
+.contato .info_contato{
+  top: 15%;
+}
+
+.contato .botao_fale_conosco{
+  width: 18em;
+  height: 3.2em;
+  border-radius: 80px;
+  left:3em ;
+  bottom: 0;
+  top: 85%;
+}
+
+}
+
+@media only screen and (min-width:1200px) and (max-width:1290px) and (min-height:800px) and (max-height:882px){
+
 }
