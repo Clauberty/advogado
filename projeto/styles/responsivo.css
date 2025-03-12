@@ -2053,13 +2053,14 @@
     }
     
     
-    @media only screen and (min-width:1679px) and (max-width:1681px) and (min-height:1049px) and (max-height:1051px){
+    @media only screen and (min-width:1679px) and (max-width:1900px) and (min-height:1049px) and (max-height:1060px){
     
       .hamburguer{
         display: none;
       }
       .menu a{
         font-size: 1.3em;
+        font-weight: 500;
       }
       .menu{
             height: 15vh;
@@ -2159,6 +2160,173 @@
     }
     .servicos_prestados{
       height: 85%;
+      
+    }
+    .servicos_prestados .servicos_cond{
+  height: 50%;
+    }
+    .servicos{
+      height: 150%;
+    }
+    .contato{
+      top: calc(435% - 5vh);
+      z-index: 0;
+      height: 85%;
+      
+    }
+
+    .contato h1{
+      text-align: center;
+       width: 100%;
+       margin-top:0;
+       right: 0;
+       font-style: italic;
+      }
+    
+      .contato .info_contato{
+        position: absolute;
+        top:3em;
+      }
+      .contato p{
+      height: 90%;
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-top: 0%;
+      font-weight:600;
+      font-style: italic;
+      }
+      .botao_fale_conosco {
+        font-size: 1.5em;
+        left: 0;
+    
+      }
+      .contato .info_contato{
+        top: 14em;
+        height: 60%;
+      }
+    
+    
+      iframe{
+        width: 50%;
+        height: 70%;
+        top: 10em;
+      }
+    
+    }
+    @media only screen and (min-width:1900px) and (max-width:2000px) and (min-height:1040px) and (max-height:1140px){
+
+      .hamburguer{
+        display: none;
+      }
+      .menu a{
+        font-size: 1.3em;
+        font-weight: 500;
+      }
+      .menu{
+            height: 15vh;
+      }
+      .texto_fundo_menu{
+        height: 45em;
+        top: 8em;
+      }
+      .texto_fundo_menu h4{
+        top:1.2em;
+        font-size: 5.5em;
+      }
+      .texto_fundo_menu p{
+        top:61%;
+        margin-left: 0.3em;
+        font-size: 1.5em;
+        margin-left: 1em;
+      }
+    
+        .botao_chamada{
+        font-size: 1.2em;
+        font-weight: 500;
+        width: 10em;
+      }
+
+      .botao_chamada a{
+        height: 3.5em;
+        font-size: 1.2em;
+        font-weight: 500;
+      
+      }
+
+      .linha{
+        top: 15em;
+        height: 0.2em;
+        margin-top: 0.5em;
+      }
+      .conteudo_sobre{
+        top: 10em;
+        font-size: 1.5em;
+      }
+      .conteudo_sobre p{
+       font-size: 1.2em;
+      }
+      .img_fundo_atuacao{
+         background-position-x : 100%;
+         }
+    
+      .titulo_atuacao{
+        font-size: 5em;
+        top: 0;
+      }
+      .org_area_de_atuacao img{
+        width: 400px;
+        height: 350px;
+        top: 3em;
+      }
+      .org_area_de_atuacao p{
+        top: 22em;
+        margin: auto;
+        left: 0;
+        right: 0;
+        font-size: 1.2em;
+       width: 60%;
+      }
+
+      .org_area_de_atuacao div{
+        width: 35%;
+      }
+
+      .org_area_de_atuacao div p{
+       font-weight:bold;
+       font-size: 1.32em;
+       top: 20.5em;
+       color: #000000;
+
+      }
+    .botao_atuacao{
+      top: 72%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: 1.3em;
+    }
+    .titulo_serv_civil{
+      font-size: 5em;
+      top: 10em;
+      
+    }
+    .explica_serv_civil{
+      top: 30em;
+      font-size: 1.5em;
+      font-weight:600 ;
+    }
+    .titulo_serv_cond{
+      font-size: 5em;
+      top: 2em;
+      
+    }
+    .explica_serv_cond{
+      top: 0;
+      font-size: 1.5em;
+      font-weight:600;
+    }
+    .servicos_prestados{
+      height: 78%;
       
     }
     .servicos_prestados .servicos_cond{
