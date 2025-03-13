@@ -17,12 +17,15 @@ function scrollSection(event){
      console.log(href)
     const section = document.querySelector(href);
 
-   let topSection = section.offsetTop;
+   const offsetPercent = 15; // Porcentagem da altura da tela como offset
+const offset = (window.innerHeight * offsetPercent) / 100;
+const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
 
-   window.scrollTo({
-    top: topSection,
-    behavior: 'smooth'
-   })
+window.scrollTo({
+    top: sectionPosition,
+    behavior: "smooth"
+});
+
 
 }
 
@@ -40,10 +43,10 @@ function barramenu(){
     menu.style.display = 'flex';
     setTimeout(() => {
         menu.style.visibility = 'visible';
-    }, 0001);
+    }, 1);
     setTimeout(() => {
         menu.style.height="160%";
-    }, 0001);
+    }, 1);
     
     
     var x = document.createElement('div');

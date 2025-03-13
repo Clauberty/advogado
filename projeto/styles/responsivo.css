@@ -4,11 +4,46 @@
   iphone 13 mini
   
    ========================== */
-   @media only screen and (max-width: 390px) and (max-height:853px) {
+   @media only screen and (max-width: 393px) and (max-height:853px) {
 
     body{
         overflow-x: hidden;
     }
+
+    .section_0{
+        
+      height: 100vh;
+      width: 100%;
+    }
+.section_1{
+  z-index: 0;
+  top:calc(100% + 15%) ;
+  scroll-margin-top: 15%;
+  height:100vh;
+  width: 100%;
+
+  
+}
+.section_2{
+  top:calc(240% + 15%) ;
+   width: 100%;
+  height: 160vh  ;
+  background-color: #510469;
+  
+}  
+.section_3{
+  top:calc(385% + 25%) ;
+ width: 100%;
+  height:185vh ;
+ 
+}
+
+.section_4{
+  top:calc(565% + 40%) ;
+  width: 100%;
+  height:calc(100vh - 15%) ;
+  background-color: #696704;
+}
     
     .menu{
       position: absolute;
@@ -125,7 +160,8 @@
           width:50%;
           justify-content: center;
           position: absolute;
-          top: -0.75em;
+          top: 0;
+          height: 100%;
       }
       .imagem_fundo{
           background-size: cover;
@@ -185,7 +221,7 @@
     
       }
       .sobre{
-          height: 140%;
+          height:140vh;
       }
       .frase_sobre{
           font-size: 1.5em;
@@ -195,21 +231,21 @@
           font-weight: 800;
       }
       .linha{
-          top: 10em;
+          top: 8em;
           width:80%;
           height: 5px;
       }
       
       .conteudo_sobre{
           font-size: 1.2em;
-          top: 5em;
+          top: 4em;
           width: 85%;
          text-align: justify;
           line-height: 1.5em;
       }
       .area_de_atuacao{
-          height: 200%;
-          top: calc(300vh - 5vh);
+          height: 200vh;
+          top: 0;
          
       }
       .titulo_atuacao{
@@ -220,11 +256,11 @@
           font-weight: 800;
       }
       .img_fundo_atuacao{
-          position:absolute;
+          position: relative;
           width: 100%;
           background-position: center;
-          height: 150vh;
-          top: 240vh;
+          height: 100%;
+          top: 0;
       }
       .org_area_de_atuacao {
          display: block;
@@ -240,10 +276,11 @@
       }
       .org_area_de_atuacao div{
          width: 30em;
-         height:26em;
+         height:60vh;
          text-align: center;
          justify-content: center;
          position: relative;
+         
         
       }
       .org_area_de_atuacao p{
@@ -261,26 +298,29 @@
           height: 10em;
              }
        .botao_atuacao{
-        top:83%;
+        bottom: 7em;
          position: absolute;
          left: 0;
          right: 0;
          margin: auto;
       }
       .servicos{
-        position: absolute;
-          top:calc(385.5%);
-          height: 220%;
+        position: relative;
+          top:0;
+          height: 200vh;
+     
          
       }
       .servicos_prestados div{
+        height: 100vh;
           border: none;
-          background: none;
+          
           
       }
       
      .servicos_prestados{
-      height: 90%;
+      display: flex;
+      height: 200vh;
       flex-direction: line;
       justify-content: center;
       display: block;
@@ -289,10 +329,8 @@
       top: 0;
       
       }
-      .servicos_cond{
-          background-color:pink;
-          height: 50%;
-      }
+    
+     
       .titulo_serv_cond{
          top:1em;
         font-size: 3em;
@@ -340,8 +378,9 @@
     
       }
       .contato{
-          top:calc(575% - 5vh); 
-          height: 85%;
+        position: relative;
+          top:0; 
+          height: 100%;
           z-index: 0;
       }
       .titulo_contato{
@@ -403,403 +442,476 @@
       
        ========================== */
     
-       @media only screen and (min-width: 391px) and (max-width: 440px) {
+       @media only screen and (min-width: 395px) and (max-width: 440px) {
       
-    body{
-      overflow-x: hidden;
-    }
-    
-    .menu{
-      position: absolute;
-      width: 7em;
-      height: 0;
-      display: flex;
-      flex-direction: column;
-      background-color: #ffffff;
-      left: 0;
-      transition: all 0.2s ease-in-out;
-     visibility: hidden;
-      top: 100%;
-      border: 1px #000 solid;
-      z-index: 5;
-     display: none;
-    }
-    
-    .menu a{
-      display: flex;
-      width: 10em;
-      height: 100%;
-      flex-direction: column;
-      position: relative;
-      text-align: center;
-      justify-content: space-around;
-      left: 0;
-      right: 0;
-    
-    }
-    
-    .menu a:hover {
-      opacity: 0.7;  
-      color: #9c8e5b;
-      opacity: 1;
-    }
-    
-    
-    
-    
-      .hamburguer{
-          position: absolute;
-          width: 25px;
-          border: none ;
-          background: none ;
-          cursor: pointer;
-          border-top: 2px solid #000;
-         align-items: auto;
-         padding: 0;
-         left: 2.2em;
+        body{
+          overflow-x: hidden;
       }
-      .hamburguer::before, .hamburguer::after{
-          content: " ";
-          display: block;
-          width: 25px;
-          height: 2px;
-          background-color: #000;
-          margin-top: 5px;
+  
+      .section_0{
           
-      }
-      .zap_icon{
-          right: 1em;
-          width: 2.5em;
-          height: 2.5em;
-        }
-          
-      .centralizar_menu {
-          justify-items: center;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-          width: 100%;
-      }
-      .fundo_menu{
-          
-          top: -1.2em;
-          height:150%;
-          width: 40%;
-          display: flex; 
-       background-size:100%;
-          background-repeat: no-repeat;
-      justify-content: center;
-          position: relative;
-          left: 0;
-          right: 0;
-          margin: auto;
-      }
-      .sociais{
-          flex-direction: column;
-          width: 3em;
-          justify-items: center;
-          position:absolute;
-          right: 0.5em;
-       }
-       .sociais a{
-          flex-direction: column;
-      display:block;
-      font-size: 0.7em;
-      }
-      .sociais button{
-          height: 1em;
-          padding: 0;
-          margin:0;
-      }
-    
-      .traco{
-          position: relative;
-          background-color: #000;
-          width: 1.5em;
-          height: 1.5px;
-          right: 0;
-          top: 0;
-      }
-      .fundo_menu{
-          background-size: 100%;
-          width:50%;
-          justify-content: center;
-          position: absolute;
-          top: -0.75em;
-      }
-      .imagem_fundo{
-          background-size: cover;
-          background-position:center;
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 100%;
-         
-      }
-      .texto_fundo_menu{
-          position: absolute;
-          margin-left: none;
-         text-align: center;
-          width: 100%;
-        left: 0;
-        right: 0;
-          margin: auto;
-        justify-content: center;
-        height: 56%;
-        margin-top:none ;
-        text-align: center;
-        top:30%;
-      }
-    
-      .texto_fundo_menu h4{
-        right: 0;
-        left: 0;
-          text-shadow: 0px 0px 3px #3d3d3d;
-          font-weight: 600;
-          top: 0;
-          width: 85%;
-          text-align: center;
-         margin: auto;
-          font-size: 1.5em;
-       }
-    
-      .texto_fundo_menu p{
-          position: relative;
-          font-size: 1em;
-          width: 80%;
-          text-align: center;
-          left: 0;
-          right: 0;
-          top:0;
-          margin: auto;
-      }
-    
-      .texto_fundo_menu a{
-      border-radius:10px ;
-     
-    }
-     
-      .texto_fundo_menu button{
-        left: 0;
-        right: 0;
-        margin: auto;
-    
-      }
-      .sobre{
-          height: 140%;
-      }
-      .frase_sobre{
-          font-size: 1.5em;
-          top: 1.5em;
-          width: 95%;
-          text-align: center;
-          font-weight: 800;
-      }
-      .linha{
-          top: 10em;
-          width:80%;
-          height: 5px;
-      }
-      
-      .conteudo_sobre{
-          font-size: 1.2em;
-          top: 5em;
-          width: 85%;
-         text-align: justify;
-          line-height: 1.5em;
-      }
-      .area_de_atuacao{
-          height: 200%;
-          top: calc(28vh - 5vh);
-         
-      }
-      .titulo_atuacao{
-          font-size: 3em;
-          top: 0;
-          width: 100%;
-          text-align: center;
-          font-weight: 800;
-      }
-      .img_fundo_atuacao{
-          position:absolute;
-          width: 100%;
-          background-position: center;
-          height: 150vh;
-          top: 210vh;
-      }
-      .org_area_de_atuacao {
-         display: block;
-         top:7em;
-          justify-items: center;
-         height: 80%;
-      }
-      .org_area_de_atuacao img{
-          justify-content: center;
-          align-items: center;
-          height: 15em;
-          background-size: cover;
-      }
-      .org_area_de_atuacao div{
-         width: 30em;
-         height:26em;
-         text-align: center;
-         justify-content: center;
-         position: relative;
-        
-      }
-      .org_area_de_atuacao p{
-          width: 20em;
-          justify-content: center;
-         text-align: center;
-          margin-left:auto;
-          margin-right: auto;
-          justify-content: center;
-         left: 0;
-         right: 0;
-          top: 15em;
-          font-size: 1em;
-          line-height: 1em;
-          height: 10em;
-             }
-       .botao_atuacao{
-        top:75%;
-         position: absolute;
-         left: 0;
-         right: 0;
-         margin: auto;
-      }
-      .servicos{
-        position: absolute;
-          top:calc(345.5%);
-          height: 150%;
-         
-      }
-      .servicos_prestados div{
-          border: none;
-          background: none;
-          
-      }
-      
-     .servicos_prestados{
-      height: 95%;
-      flex-direction: line;
-      justify-content: center;
-      display: block;
-      width: 100%;
-      align-content: space-around;
-      top: 0;
-      
-      }
-      .servicos_cond{
-          background-color:pink;
-          height: 50%;
-      }
-      .titulo_serv_cond{
-         top:1em;
-        font-size: 3em;
-       text-align: center;
-        left: 0;
+        height: 100vh;
         width: 100%;
-          
       }
-      .explica_serv_cond{
-          top: 10em;
-          font-size:1.2em;
-          font-weight: 600;
-          line-height: 1.5em;
-          width: 85%;
-          text-align: justify;
-          right: 0;
-          left: 0;
-          margin: auto;
-         
-      }
-      .titulo_serv_civil{
-        position:relative;
-          font-size: 3em;
-          width: 15%;
-          right: 0;
-          left: 0;
-          width: 1.5em;
-          top:0.1em;
-          margin-bottom:1em;
-          margin-left: auto;
-          margin-right: auto;
-          padding: 0;
-      }
-      .explica_serv_civil{
+  .section_1{
+    z-index: 0;
+    top:calc(100% + 15%) ;
+    scroll-margin-top: 15%;
+    height:100vh;
+    width: 100%;
+  
+    
+  }
+  .section_2{
+    top:calc(210% + 15%) ;
+     width: 100%;
+    height: 160vh  ;
+    background-color: #510469;
+    
+  }  
+  .section_3{
+    top:calc(355% + 25%) ;
+   width: 100%;
+    height:185vh ;
+   
+  }
+  
+  .section_4{
+    top:calc(490% + 40%) ;
+    width: 100%;
+    height:calc(100vh - 15%) ;
+    background-color: #696704;
+  }
+      
+      .menu{
+        position: absolute;
+        width: 7em;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+       visibility: hidden;
+        top: 100%;
+        border: 1px #000 solid;
+        z-index: 5;
+        
        
-        font-size:1.2em;
-          font-weight: 600;
-          line-height: 1.5em;
-          width: 85%;
-          justify-items: center;
-          text-align: justify;
-          right: 0;
-          left: 0;
-          margin: auto;
-    
       }
-      .contato{
-          top:calc(495% - 5vh); 
-          height: 85%;
-          z-index: 0;
+      
+      .menu a{
+        display: flex;
+        width: 10em;
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        justify-content: space-around;
+        left: 0;
+        right: 0;
+      
       }
-      .titulo_contato{
-          top: 1em;
-          font-size: 1.5em;
-          right:0;
-          left: 0;
-          margin: auto;
-          width: 100%;
-          text-align: center;
-    
-      } .info_contato{
-          top: 4em;
-          font-size: 0.9em;
-          width:80%;
-          right:0;
-          left: 0;
-          margin: auto;
-          text-align: justify;
+      
+      .menu a:hover {
+        opacity: 0.7;  
+        color: #9c8e5b;
+        opacity: 1;
+      }
+      
+      
+        .hamburguer{
+            position: absolute;
+            width: 25px;
+            border: none ;
+            background: none ;
+            cursor: pointer;
+            border-top: 2px solid #000;
+           align-items: auto;
+           padding: 0;
+           left: 2.2em;
+        }
+        .hamburguer::before, .hamburguer::after{
+            content: " ";
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #000;
+            margin-top: 5px;
+            
+        }
+        .zap_icon{
+            right: 1em;
+            width: 2.5em;
+            height: 2.5em;
+          }
+            
+        .centralizar_menu {
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+        }
+        .fundo_menu{
+            
+            top: -1.2em;
+            height:150%;
+            width: 40%;
+            display: flex; 
+         background-size:100%;
+            background-repeat: no-repeat;
+        justify-content: center;
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .sociais{
+            flex-direction: column;
+            width: 3em;
+            justify-items: center;
+            position:absolute;
+            right: 0.5em;
+         }
+         .sociais a{
+            flex-direction: column;
+        display:block;
+        font-size: 0.7em;
+        }
+        .sociais button{
+            height: 1em;
+            padding: 0;
+            margin:0;
+        }
+      
+        .traco{
+            position: relative;
+            background-color: #000;
+            width: 1.5em;
+            height: 1.5px;
+            right: 0;
+            top: 0;
+        }
+        .fundo_menu{
+            background-size: 100%;
+            width:50%;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+        .imagem_fundo{
+            background-size: cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+           
+        }
+        .texto_fundo_menu{
+            position: absolute;
+            margin-left: none;
+           text-align: center;
+            width: 100%;
           left: 0;
           right: 0;
-          margin: auto;
+            margin: auto;
           justify-content: center;
-          height: 20em;
-    
+          height: 56%;
+          margin-top:none ;
+          text-align: center;
+          top:30%;
+        }
+      
+        .texto_fundo_menu h4{
+          right: 0;
+          left: 0;
+            text-shadow: 0px 0px 3px #3d3d3d;
+            font-weight: 600;
+            top: 0;
+            width: 85%;
+            text-align: center;
+           margin: auto;
+            font-size: 1.5em;
+         }
+      
+        .texto_fundo_menu p{
+            position: relative;
+            font-size: 1em;
+            width: 80%;
+            text-align: center;
+            left: 0;
+            right: 0;
+            top:0;
+            margin: auto;
+        }
+      
+        .texto_fundo_menu a{
+        border-radius:10px ;
+       
       }
-      .botao_fale_conosco{
-      width: 100%;
-          bottom:0;
+       
+        .texto_fundo_menu button{
           left: 0;
           right: 0;
-          width:100%;
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto;
-      }
-    
-      .botao_fale_conosco a button{
-    width: 65%;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    }
-    
-      iframe{
+          margin: auto;
+      
+        }
+        .sobre{
+            height:120vh;
+        }
+        .frase_sobre{
+            font-size: 1.5em;
+            top: 1.5em;
+            width: 95%;
+            text-align: center;
+            font-weight: 800;
+        }
+        .linha{
+            top: 8em;
+            width:80%;
+            height: 5px;
+        }
+        
+        .conteudo_sobre{
+            font-size: 1.2em;
+            top: 4em;
+            width: 85%;
+           text-align: justify;
+            line-height: 1.5em;
+        }
+        .area_de_atuacao{
+            height: 200vh;
+            top: 0;
+           
+        }
+        .titulo_atuacao{
+            font-size: 4em;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: 800;
+        }
+        .img_fundo_atuacao{
+            position: relative;
+            width: 100%;
+            background-position: center;
+            height: 100%;
+            top: 0;
+        }
+        .org_area_de_atuacao {
+           display: block;
+           top:12em;
+            justify-items: center;
+           height: 80%;
+        }
+        .org_area_de_atuacao img{
+            justify-content: center;
+            align-items: center;
+            height: 15em;
+            background-size: cover;
+        }
+        .org_area_de_atuacao div{
+           width: 30em;
+           height:60vh;
+           text-align: center;
+           justify-content: center;
+           position: relative;
+           
+          
+        }
+        .org_area_de_atuacao p{
+            width: 20em;
+            justify-content: center;
+           text-align: center;
+            margin-left:auto;
+            margin-right: auto;
+            justify-content: center;
+           left: 0;
+           right: 0;
+            top: 15em;
+            font-size: 1em;
+            line-height: 1em;
+            height: 10em;
+               }
+         .botao_atuacao{
+          bottom: 7em;
+           position: absolute;
+           left: 0;
+           right: 0;
+           margin: auto;
+        }
+        .servicos{
+          position: relative;
+            top:0;
+            height: 155vh;
+       
+           
+        }
+        .servicos_prestados div{
+          height: 50vh;
+            border: none;
+            
+            
+        }
+        
+       .servicos_prestados{
+        display: flex;
+        height: 150vh;
+        flex-direction: line;
+        justify-content: center;
+        display: block;
+        width: 100%;
+        align-content: space-around;
+        top: 0;
+        
+        }
+      
+       
+        .titulo_serv_cond{
+           top:1em;
+          font-size: 3em;
+         text-align: center;
+          left: 0;
           width: 100%;
-         top: 25em;
-          height: 40%;
-         left: 0;
-         right: 0;
-         margin-left: auto;
-         margin-right: auto;
-    
+            
+        }
+        .explica_serv_cond{
+            top: 10em;
+            font-size:1.2em;
+            font-weight: 600;
+            line-height: 1.5em;
+            width: 85%;
+            text-align: justify;
+            right: 0;
+            left: 0;
+            margin: auto;
+           
+        }
+        .titulo_serv_civil{
+          position:relative;
+            font-size: 3em;
+            width: 15%;
+            right: 0;
+            left: 0;
+            width: 1.5em;
+            top:0.1em;
+            margin-bottom:1em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+        .explica_serv_civil{
+         
+          font-size:1.2em;
+            font-weight: 600;
+            line-height: 1.5em;
+            width: 85%;
+            justify-items: center;
+            text-align: justify;
+            right: 0;
+            left: 0;
+            margin: auto;
+      
+        }
+        .contato{
+          position: relative;
+            top:0; 
+            height: 100%;
+            z-index: 0;
+        }
+        .titulo_contato{
+            top: 1em;
+            font-size: 1.5em;
+            right:0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+      
+        } .info_contato{
+            top: 4em;
+            font-size: 0.9em;
+            width:85%;
+            right:0;
+            left: 0;
+            margin: auto;
+            text-align: justify;
+            margin: 0 auto;
+            justify-content: center;
+             height: 20em;
+            
+          }
+        .botao_fale_conosco{
+        width: 100%;
+            bottom:0;
+            left: 0;
+            right: 0;
+            width:100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      
+        .botao_fale_conosco a button{
+      width: 65%;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
       }
+      
+        iframe{
+            width: 90%;
+           top: 22em;
+            height: 40%;
+           left: 0;
+           right: 0;
+           margin-left: auto;
+           margin-right: auto;
+      
+        }
+       
     
     }
     @media only screen and (min-width: 767px) and (max-width:800px) {
+     
+      .section_0{
+        
+        height: 100vh;
+        width: 100%;
+      }
+  .section_1{
+    z-index: 0;
+    top:calc(100% + 15%) ;
+    scroll-margin-top: 15%;
+    height:100vh;
+    width: 100%;
+  
+    
+  }
+  .section_2{
+    top:calc(210% + 15%) ;
+     width: 100%;
+    height: 200vh  ;
+    background-color: #510469;
+    
+  }  
+  .section_3{
+    top:calc(400% + 25%) ;
+   width: 100%;
+    height:160vh ;
+   
+  }
+  
+  .section_4{
+    top:calc(540% + 40%) ;
+    width: 100%;
+    height:calc(100vh - 15%) ;
+    background-color: #696704;
+  }
+     
       .fundo_menu {
         width: 100%;
         left: 0;
@@ -891,46 +1003,66 @@
       width:75%;
       height: 5px;
     }
+    .linha{
+      top:14em;
+    }
+    .sobre .frase_sobre{
+      top:1em;
+    }
+    .sobre {
+      height: 115vh;
+    }
     .conteudo_sobre{
       top: 7em;
       font-size: 1.3em;
       text-align: justify;
+      font-weight: 600;
+      width: 70%;
+      font-size: 1.5em;
      }
      .org_area_de_atuacao {
       display: grid;
+  
+     top: 15vh;
+     height: 70%;
+     
      }
      .org_area_de_atuacao img{
-      height: 15em;
+      height: 20em;
       background-size: cover;
-      margin: 0 auto;
+      width: 30em;
+      
      }
      .org_area_de_atuacao div{
-      width: 30em;
-      height:26em;
+      width: 26em;
+      height:70vh;
       text-align: center;
       justify-content: center;
       position: relative;
      }
      .org_area_de_atuacao p{
-      width: 20em;
+      width: 18em;
       justify-content: center;
       text-align: center;
-      margin-left:auto;
-      margin-right: auto;
       justify-content: center;
       left: 0;
       right: 0;
-      top: 15em;
-      font-size: 1em;
-      line-height: 1.1em;
-      height: 10em;
+     margin: auto;
+      top: 14em;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      height: 40em;
+      font-weight: 600;
+      
          }
       .img_fundo_atuacao{
         width: 100%;
         background-position: center;
-        height: 150vh;
+        height: 100%;
       }
       .botao_atuacao{
+        width: 20em;
+        height: 5em;
         top:75%;
          position: absolute;
          left: 0;
@@ -938,12 +1070,13 @@
          margin: auto;
       }
       .servicos{
-        position: absolute;
-        top:calc(330% - 5vh);
-        height: 150%;
+        top:0;
+        height: 100%;
       }
       .servicos_prestados{
         height: 100%;
+        top: 0;
+       
       }
       .servicos_prestados div{
           border: none;
@@ -951,7 +1084,7 @@
       }
       .titulo_serv_cond{
         top:1em;
-       font-size: 3em;
+       font-size: 4em;
       text-align: center;
        left: 0;
        width: 100%;
@@ -959,8 +1092,8 @@
      }
      .explica_serv_cond{
          top: 10em;
-         font-size:1.3em;
-         font-weight: 600;
+         font-size:1.4em;
+         font-weight: 700;
          line-height: 2em;
          width: 85%;
          text-align: justify;
@@ -971,7 +1104,7 @@
      }
      .titulo_serv_civil{
        position:relative;
-         font-size: 3em;
+       font-size: 4em;
          width: 15%;
          right: 0;
          left: 0;
@@ -983,9 +1116,9 @@
          padding: 0;
      }
      .explica_serv_civil{
-         top: 38em;
-       font-size: 1.3em;
-         font-weight: 600;
+         top: 100vh;
+       font-size: 1.4em;
+         font-weight: 700;
          line-height: 2em;
          width: 85%;
          justify-items: center;
@@ -996,24 +1129,27 @@
     
      }
      .contato{
-         top:calc(470% - 5vh);
-         height: 85%;
+         top:0;
+         height: 100%;
         z-index: 0;
+        
      }
      
-     .titulo_contato{
+     .contato .titulo_contato{
       top: 1em;
-      font-size: 1.5em;
+      font-size: 2.3em;
       right:0;
       left: 0;
       margin: auto;
       width: 100%;
       text-align: center;
+      
     
     }
      .info_contato{
+      justify-items: center;
          top: 4em;
-         font-size: 1em;
+         font-size: 1.2em;
          width:80%;
          right:0;
          left: 0;
@@ -1023,10 +1159,20 @@
          right: 0;
          margin: auto;
          justify-content: center;
-         height: 20em;
-        
+         height: 19em;
+         font-weight: 800;
+         
+
+        }
+
+        .info_contato p{
+          position: relative;
+          top: 0;
+          font-size: 1.1em;
+
         }
          .botao_fale_conosco{
+          margin-top: 0.5em;
          width: 100%;
          bottom:0;
          left: 0;
@@ -1035,8 +1181,10 @@
          text-align: center;
          margin-left: auto;
          margin-right: auto;
+         top: 72%;
      }
      .botao_fale_conosco a button{
+      top: 55%;
      width: 65%;
      right: 0;
      margin-left: auto;
@@ -1046,7 +1194,7 @@
      }
      iframe{
          width: 90%;
-         top: 25em;
+         top: 48vh;
          height: 40%;
          left: 0;
          right: 0;
@@ -1056,7 +1204,42 @@
      }
     
     }
-    @media only screen and (min-width: 800px) and (max-width:1000px){  
+    @media only screen and (min-width: 800px) and (max-width:1280px){  
+      .section_0{
+        
+        height: 100vh;
+        width: 100%;
+      }
+  .section_1{
+    z-index: 0;
+    top:calc(100% + 15%) ;
+    scroll-margin-top: 15%;
+    height:100vh;
+    width: 100%;
+  
+    
+  }
+  .section_2{
+    top:calc(200% + 15%) ;
+     width: 100%;
+    height: 170vh  ;
+    background-color: #510469;
+    
+  }  
+  .section_3{
+    top:calc(347% + 25%) ;
+   width: 100%;
+    height:120vh ;
+   
+  }
+  
+  .section_4{
+    top:calc(450% + 40%) ;
+    width: 100%;
+    height:calc(100vh - 15%) ;
+    background-color: #696704;
+  }
+     
       .fundo_menu {
         width: 100%;
         left: 0;
@@ -1148,67 +1331,88 @@
       width:75%;
       height: 5px;
     }
+    .linha{
+      top:14em;
+    }
+    .sobre .frase_sobre{
+      top:1em;
+    }
+    .sobre {
+      height: 115vh;
+    }
     .conteudo_sobre{
       top: 7em;
       font-size: 1.3em;
       text-align: justify;
+      font-weight: 600;
+      width: 70%;
+      font-size: 1.5em;
      }
      .org_area_de_atuacao {
       display: grid;
+     top: 15vh;
+     height: 71%;
+     
      }
      .org_area_de_atuacao img{
-      height: 15em;
+      height: 20em;
       background-size: cover;
-      margin: 0 auto;
+      width: 30em;
+      
      }
      .org_area_de_atuacao div{
-      width: 30em;
-      height:26em;
+      width: 26em;
+      height:50vh;
       text-align: center;
       justify-content: center;
       position: relative;
      }
      .org_area_de_atuacao p{
-      width: 20em;
+      width: 18em;
       justify-content: center;
       text-align: center;
-      margin-left:auto;
-      margin-right: auto;
       justify-content: center;
       left: 0;
       right: 0;
-      top: 15em;
-      font-size: 1em;
-      line-height: 1.1em;
-      height: 10em;
+     margin: auto;
+      top: 14em;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      height: 40em;
+      font-weight: 600;
+      
          }
       .img_fundo_atuacao{
         width: 100%;
         background-position: center;
-        height: 150vh;
+        height: 100%;
       }
       .botao_atuacao{
-        top:75%;
+        width: 20em;
+        height: 5em;
+        top:70%;
          position: absolute;
          left: 0;
          right: 0;
          margin: auto;
       }
       .servicos{
-        position: absolute;
-        top:calc(330% - 5vh);
-        height: 150%;
+        top:0;
+        height: 100%;
       }
       .servicos_prestados{
         height: 100%;
+        top: 0;
+       
       }
       .servicos_prestados div{
           border: none;
           background: none;
+        
       }
       .titulo_serv_cond{
         top:1em;
-       font-size: 3em;
+       font-size: 4em;
       text-align: center;
        left: 0;
        width: 100%;
@@ -1216,8 +1420,8 @@
      }
      .explica_serv_cond{
          top: 10em;
-         font-size:1.3em;
-         font-weight: 600;
+         font-size:1.4em;
+         font-weight: 700;
          line-height: 2em;
          width: 85%;
          text-align: justify;
@@ -1228,21 +1432,21 @@
      }
      .titulo_serv_civil{
        position:relative;
-         font-size: 3em;
+       font-size: 4em;
          width: 15%;
          right: 0;
          left: 0;
          width: 1.5em;
-         top:6.5em;
+         top:6em;
          margin-bottom:1em;
          margin-left: auto;
          margin-right: auto;
          padding: 0;
      }
      .explica_serv_civil{
-         top: 38em;
-       font-size: 1.3em;
-         font-weight: 600;
+         top: 82vh;
+       font-size: 1.4em;
+         font-weight: 700;
          line-height: 2em;
          width: 85%;
          justify-items: center;
@@ -1253,24 +1457,27 @@
     
      }
      .contato{
-         top:calc(470% - 5vh);
-         height: 85%;
+         top:0;
+         height: 100%;
         z-index: 0;
+        
      }
      
-     .titulo_contato{
+     .contato .titulo_contato{
       top: 1em;
-      font-size: 1.5em;
+      font-size: 2.3em;
       right:0;
       left: 0;
       margin: auto;
       width: 100%;
       text-align: center;
+      
     
     }
      .info_contato{
+      justify-items: center;
          top: 4em;
-         font-size: 1em;
+         font-size: 1.2em;
          width:80%;
          right:0;
          left: 0;
@@ -1280,10 +1487,20 @@
          right: 0;
          margin: auto;
          justify-content: center;
-         height: 20em;
-        
+         height: 25em;
+         font-weight: 800;
+         
+
+        }
+
+        .info_contato p{
+          position: relative;
+          top: 2em;
+          font-size: 1.1em;
+
         }
          .botao_fale_conosco{
+          margin-top: 3em;
          width: 100%;
          bottom:0;
          left: 0;
@@ -1292,8 +1509,10 @@
          text-align: center;
          margin-left: auto;
          margin-right: auto;
+         top: 60%;
      }
      .botao_fale_conosco a button{
+      top: 55%;
      width: 65%;
      right: 0;
      margin-left: auto;
@@ -1303,7 +1522,7 @@
      }
      iframe{
          width: 90%;
-         top: 25em;
+         top: 48vh;
          height: 40%;
          left: 0;
          right: 0;
@@ -1311,95 +1530,10 @@
          margin-right: auto;
     
      }
-    .texto_fundo_menu h4{
-      top: 3em;
-    }
-    .texto_fundo_menu p{
-      top: 25em;
-      left: 1em;
-    }
-    .texto_fundo_menu button{
-      top: 32em;
-    }
-    .conteudo_sobre{
-      top: 15em;
-    }
-      .area_de_atuacao{
-      height: 70%;
-    }
-    .org_area_de_atuacao{
-      top: 8em;
-      height: 55%;
-    }
-    .org_area_de_atuacao img{
-      top: 0;
-    }
-    .org_area_de_atuacao div{
-      top: 0;
-    }
-    .botao_atuacao{
-      top: 60%;
-    
-    }
-    .servicos{
-      top: calc(305% - 5vh);
-    }
-    .contato{
-      top: calc(430% - 5vh);
-    }
     }
     
-    @media only screen and (min-width:800px) and (max-width:832px) and (min-height:600px) and (max-height:624px){
-    .texto_fundo_menu{
-      top:0;
-    }
-    
-    .texto_fundo_menu h4{
-      top:1.9em;
-     font-size: 3.5em;
-    }
-    .texto_fundo_menu p{
-      top:70%;
-      font-size: 1.3em;
-      margin-left: 0.4em;
-    }
-    
-    .texto_fundo_menu button{
-      top:100%;
-     width: 17em;
-     padding-left:1px;
-    }
-    .sobre{
-      height: 200%;
-    }
-    
-    .img_fundo_atuacao{
-      top:280%;
-      height: 250%;
-    }
-    
-    .area_de_atuacao{
-      height:150%
-    }
-    
-    .org_area_de_atuacao{
-      height: 60%;
-    }
-    .botao_atuacao{
-      top:65%;
-    }
-    
-    .servicos{
-      top:475%;
-      height: 240%;
-    }
-    
-    .contato{
-      top:690%;
-      height: 130%;
-    }
-    
-    }
+    @media only screen and (min-width:800px) and (max-width:832px) and (min-height:600px) and (max-height:624px){}
+
     
     @media only screen and (min-width:1000px) and (max-width:1139px) {
       .fundo_menu {
@@ -2037,7 +2171,9 @@
       height: 100%;
     }
     .contato{
-      top: calc(400% - 5vh);
+      position: relative;
+      height: 100%;
+      top: 0;
     }
     .info_contato{
       top: 10em;

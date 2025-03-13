@@ -14,27 +14,50 @@
     html{
         display: flex;
     }
-  
+    body{
+        display: flex;
+        justify-content:space-between;
+    }
+    section{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        
+    }
   
     .section_0{
-        height: calc(100vh - 10vh);
-        width: 100%;
         
+        height: 100vh;
+        width: 100%;
       }
   .section_1{
-    height: calc(100vh - 5vh) ;
+    z-index: 0;
+    top:calc(100% + 15%) ;
+    scroll-margin-top: 15%;
+    height:100vh;
     width: 100%;
+  
     
   }
   .section_2{
+    top:calc(200% + 15%) ;
      width: 100%;
-    height: calc(100vh )  ;
+    height: 110vh  ;
+    background-color: #510469;
     
   }  
   .section_3{
+    top:calc(300% + 25%) ;
    width: 100%;
-    height: calc(195vh)  ;
+    height:115vh ;
    
+  }
+ 
+  .section_4{
+    top:calc(400% + 40%) ;
+    width: 100%;
+    height:calc(100vh - 15%) ;
+    background-color: #696704;
   }
  
   
@@ -44,10 +67,9 @@
     display:flex;
     justify-content: center;
     top: 0;
-  background: white;
-  box-shadow: 5px 5px 15px #000;
-
-    z-index: 1;
+    background: white;
+    box-shadow: 5px 5px 15px #000;
+    z-index: 5;
     width: 100%;
     height: 15%;
     align-items: center;
@@ -58,6 +80,7 @@
 }
 
 .menu{
+    z-index: 5;
     position: fixed;
     top: 0;
     display: flex;
@@ -69,6 +92,11 @@
     height: 7em;
      visibility: visible;
 }
+.sobre h3{
+
+    top: 0;
+}
+
 .traco{
     position: absolute;
     background-color: #000;
@@ -228,7 +256,6 @@ background-repeat: no-repeat;
 .imagem_fundo{
     background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(/IMAGEM/stfbranco.jpg);
- background-color: #444444;
   z-index: -1;
   height: 100%;
   width:100%;
@@ -286,21 +313,20 @@ body{
 }
 .img_fundo_atuacao{
     background-image: url(/IMAGEM/fundoareatuação.jpg);
-    background-position-x: 150% ;
-    
+    background-position-x: 100% ;
+    z-index: 2;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
-    top: 196.5%;
     color: #92876a;
     width: 100%;
     left: 0;
     z-index: 0;
     justify-content: center;
     font-family: "Poppins", serif;
-    height: 110%;
+    height: 100%;
     background-size: cover;       
     z-index: 0;        
     overflow: hidden!important;                                                                              
@@ -322,9 +348,10 @@ body{
     width: 100%;
     height: 60%;
     position: absolute;
-     top: 16%;
+     top: 18%;
      justify-content: space-around;
      overflow: hidden!important;
+
     }
 
 .org_area_de_atuacao div{
@@ -393,7 +420,7 @@ color: #000;
     font-family: "Poppins", serif;
     text-align: center;
     font-size: 1em;
-    top: 100%;
+    bottom:5em;
     left: 44%;
     align-content: center;
     cursor: pointer;
@@ -402,12 +429,11 @@ color: #000;
     transition: all 0.3s ease;
     text-align: center;
     justify-content:center ;
-    transform: translateY(4em);
     
 }
 .botao_atuacao:hover {
     border-style:visible;
-    transform: translateY(4.5em);
+    transform: translateY(0.5em);
     box-shadow: 0 0 0.5em #04691a;
     border: 2px solid #04691a;
 }
@@ -473,22 +499,21 @@ img{
 }
 .servicos{
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
-    top: 300%;
+    top: 0;
     color: #333;
     width: 100%;
     left: 0;
     z-index: 0;
     justify-content: center;
     font-family: "Poppins", serif;
-    height: 191%;
+    height: 100%;
     border-radius: 30px 30px 0px 0px;
     box-shadow:7px -7px 10px #000 ;        
     
 }
 .servicos_prestados{
-    
     width: 100%;
     position: absolute;
     top: 7%;
@@ -550,22 +575,22 @@ img{
 }
 .sobre{
     display: flex;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0;
     background: #ffffff;
     color: #333;
     width: 100%;
     left: 0;
     z-index: -1;
     font-family: "Poppins", serif;
-    height: 120%;
+    height: 100%;
     justify-items: center;
     justify-content: center;
     align-items: center;
     margin-top: auto;
    box-shadow: #000 7px -7px 10px;
+   z-index: 0;
    
-    
 }
 
 .frase_sobre{
@@ -594,8 +619,8 @@ img{
 
 .contato{
     display: flex;
-    position: absolute;
-    top:calc(500% - 10vh) ;
+    position: relative;
+    top:0;
     background: #000000;
     color: #000;
     width: 100%;
@@ -603,7 +628,7 @@ img{
     z-index: -1;
     justify-content: center;
     font-family: "Poppins", serif;
-    height: 90%;
+    height: 100%;
 }
 
 iframe{
