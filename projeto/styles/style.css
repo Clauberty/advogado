@@ -27,40 +27,43 @@
   
     .section_0{
         
-        height: 100vh;
+        height: 700px;
         width: 100%;
       }
   .section_1{
     z-index: 0;
-    top:calc(100% + 15%) ;
+    top:calc(600px + 7em) ;
     scroll-margin-top: 15%;
-    height:100vh;
+    height: clamp(644px,100%,700px);
     width: 100%;
   
     
   }
   .section_2{
-    top:calc(200% + 15%) ;
+    top:calc(1200px + 7em) ;
      width: 100%;
-    height: 110vh  ;
+    height: clamp(700px,100%,700px);
     background-color: #510469;
     
   }  
   .section_3{
-    top:calc(300% + 25%) ;
+    top:calc(1900px + 7em) ;
    width: 100%;
-    height:115vh ;
+   height: clamp(700px,100%,700px);
    
   }
  
   .section_4{
-    top:calc(400% + 40%) ;
+    top:calc(2600px + 7em) ;
     width: 100%;
-    height:calc(100vh - 15%) ;
+    height: clamp(300px,500px,600px);
     background-color: #696704;
   }
  
-  
+  .hamburguer{
+    display: none;
+  }
+
 
 .centralizar_menu{
     position: fixed;
@@ -71,11 +74,11 @@
     box-shadow: 5px 5px 15px #000;
     z-index: 5;
     width: 100%;
-    height: 15%;
     align-items: center;
     justify-items: center;
     left: 0;
     opacity: 1;
+    height: clamp(100px,15%,125px);
   
 }
 
@@ -89,7 +92,7 @@
     z-index: 0;
     font-family: "Poppins", serif;
     align-items: center;
-    height: 7em;
+    height: clamp(100px,15%,125px);
      visibility: visible;
 }
 .sobre h3{
@@ -186,7 +189,7 @@
     position: fixed;
     right: 3em;
     bottom: 3em;
-    z-index: 3;
+    z-index: 8;
 }
 .zap_icon{
     cursor: pointer;
@@ -201,7 +204,7 @@ h1{
     background-size: cover;
     left: 3em;
     background-image: url(/IMAGEM/logooriginal.png);
-    height: 15%;
+    height: clamp(100px,15%,125px);;
     width: 25%;
     background-position: center;
     top: 2.5%;
@@ -222,7 +225,7 @@ background-repeat: no-repeat;
     text-align: start;
    top : 0;
     width: 8em;
-    height: 50%;
+    height: clamp(100px,15%,125px);;
     left: 1em;
 }
 .texto_fundo_menu span{
@@ -235,7 +238,7 @@ background-repeat: no-repeat;
     display: flex ;
     width: 50%;
     top: 6em;
-    height: 100%;
+    height: 500px;
     left: 3em;
 
 }
@@ -267,9 +270,6 @@ background-size: cover;
 transform: scaleX(-1);
 }
 
-.texto_fundo_menu{
-    height: 75%;
-}
 
 .texto_fundo_menu button{
     position: absolute;
@@ -334,14 +334,15 @@ body{
 .area_de_atuacao{
    z-index: 10;
     background-color: #ffffff5b;
-    top: 200%;
+    top:0;
     width: 100%;
     left: 0;
-    height: 120%;
+    height: 100%;
     background-size: cover;    
     justify-items: center;     
     align-items: center;      
-    overflow: hidden!important;                                                                              
+    overflow: hidden!important;         
+
 }
 .org_area_de_atuacao{
     display: flex;
@@ -358,8 +359,9 @@ body{
     display:flex;
     position: relative;
     height: 100%;
-    width: 40%;
+    width:  clamp(550px,550px,550px);
     justify-content: center;
+    
 }
 
 .org_area_de_atuacao img{
@@ -637,8 +639,8 @@ iframe{
     left: 1%;
     width: 50%;
     border-radius: 1em;
-    height: 80%;
-    top: 13%;
+    height:80%;
+    top: clamp(40px,13%,40px);
 
 }
 .info_contato{
@@ -663,7 +665,7 @@ height: 65%;
 }
 .botao_fale_conosco{
     position: absolute;
-    width: 11em;
+    width:  clamp(10em,11em,25em);
     height: 2.5em;
     display: flex;
     right: 45%;
