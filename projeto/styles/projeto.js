@@ -59,7 +59,7 @@ function barramenu(){
     x.style.left = '1em';
     x.style.top = '2em';
     x.style.cursor = 'pointer';
-    x.style.opacity = '1';
+    x.style.opacity = '0';
    
 
 x.addEventListener('click', function() {
