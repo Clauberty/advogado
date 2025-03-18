@@ -1549,3 +1549,91 @@
      }
     }
 
+    @media only screen and (min-height: 735px) and (max-height:1280px){ 
+
+      .section_4{
+        top:480dvh;
+        width: 100%;
+        height:clamp(600px,100dvh - 7em,1450px);;
+        background-color: #696704;
+      }
+
+      .servicos{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        
+      }
+      .servicos_prestados{
+        position: absolute;
+        display: flex;
+        height: 200vh;
+        flex-direction: line;
+        justify-content: center;
+        display: block;
+        width: 100%;
+        align-content: space-around;
+        background-color: #510469;
+        
+        
+        
+        }
+        .servicos .servicos_prestados{
+          position: absolute;
+          display: flex;
+          height: 200vh;
+          flex-direction: line;
+          justify-content: center;
+          display: block;
+          width: 100%;
+          align-content: space-around;
+          top: 15dvh;
+          }
+
+          .servicos .servicos_prestados div{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            display: block;
+            width: 100%;
+            top: 0;
+            border-bottom: none;
+            right: 0;
+            text-align: center;
+            justify-items: center;
+            align-items: center;
+            height: 100%;
+            }
+
+            .servicos_prestados .servicos_civil{
+              position: absolute;
+              top: 75dvh !important;
+            }
+
+          .servicos .servicos_prestados p{
+            position: relative;
+            width: 70%;
+            text-align: justify;
+            top: 1em;
+            font-size: clamp(30px,3.6dvh,40px);
+            }
+            .servicos_cond .titulo_serv_cond{
+              position: relative;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              font-size: clamp(70px,7.5dvh,350px);
+              
+            }
+            .servicos_civil .titulo_serv_civil{
+              position: relative;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              font-size: clamp(70px,7.5dvh,350px);
+              
+            }
+    }
+
